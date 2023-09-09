@@ -1,0 +1,2 @@
+Email confirmation functionality needs to be implemented -> SMTP server
+Error checking criteria needs to be more stringent when creating an account.

@@ -1,5 +1,5 @@
-#Path for python interperter on my machine
 #!/usr/bin/env python3
+#Path for python interperter on my machine
 import os
 import sys
 import webbrowser
@@ -40,6 +40,7 @@ match arg:
         webbrowser.open('http://127.0.0.1:8090/_/')
     case '3':
         webbrowser.open('http://localhost:3000/')
+        #Sleep is used to account for trash windows inconsistency.
         time.sleep(1)
         webbrowser.open('http://127.0.0.1:8090/_/')
 

@@ -31,6 +31,16 @@ if not inRange(arg):
     print('Invalid Parameters(Ur trash lol)! Avaliable paramaters are 1(Frontend) or 2(Backend) or 3(Both)')
     exit()
 
+match arg:
+    case '1':
+        webbrowser.open('http://localhost:3000/')
+    case '2':
+        webbrowser.open('http://127.0.0.1:8090/_/')
+    case '3':
+        webbrowser.open('http://localhost:3000/')
+        webbrowser.open('http://127.0.0.1:8090/_/')
+
+
 try:
     os.chdir('backend')
     if current_os=='posix':
@@ -42,14 +52,5 @@ try:
     os.system('npm run dev &')
 except Exception as e:
     print(e)
-
-match arg:
-    case '1':
-        webbrowser.open('http://localhost:3000/')
-    case '2':
-        webbrowser.open('http://127.0.0.1:8090/_/')
-    case '3':
-        webbrowser.open('http://localhost:3000/')
-        webbrowser.open('http://127.0.0.1:8090/_/')
 
     

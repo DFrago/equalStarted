@@ -3,6 +3,11 @@ As far as the repo goes, the main thing to be concerned about in the frontend is
 The default brach is set to working, so we will have the main branch as a backup. 
 I've also added a todo.txt file as a place we can leave detailed notes regarding what needs to be done.
 
+You might have to install some things in the repo directory{
+  npm install solid-js
+  npm install vite (This is really only if the vite error does not go away after installing solid-js) 
+  #You may also have to replace the pocketbase executable with the windows version (After doing it once it should no longer be a problem)
+}
 #CLI instructions (or jsut use vscode extension if u want)
 To add your changes{
   git add [What you want to add] #You can use . to add all changes

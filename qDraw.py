@@ -3,16 +3,33 @@ import os
 import sys
 import webbrowser
 
-if len(sys.argv)<2:
-    print('\n1 parameter is required : Avaliable paramaters are 1(Frontend) or 2(Backend) or 3(Both)\n')
-    exit()
+def inRange(value:str)->bool:
+    if value in ['1','2','3']:
+        return True
+    return False
 
-arg=sys.argv[1]
+#For Standalone
+if len(sys.argv)<2:
+    isValid=False
+    while not isValid:
+        arg=input('(Enter q to quit) Make a selection: Avaliable paramaters are 1(Frontend) or 2(Backend) or 3(Both): ')
+        if arg=="q":
+            exit()
+        elif not inRange(arg):
+            print('Invalid Parameters(Ur trash lol)!')
+        else:
+            isValid=True
+
+#For CLI use
+else:
+    arg=sys.argv[1]
+
 current_os=os.name
 home=os.getcwd()
 
-if arg not in ['1','2','3']:
+if not inRange(arg):
     print('Invalid Parameters(Ur trash lol)! Avaliable paramaters are 1(Frontend) or 2(Backend) or 3(Both)')
+    exit()
 
 try:
     os.chdir('backend')

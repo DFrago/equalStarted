@@ -38,7 +38,7 @@ match arg:
         webbrowser.open('http://127.0.0.1:8090/_/')
     case '3':
         webbrowser.open('http://localhost:3000/')
-        webbrowser.open('http://127.0.0.1:8090/_/')
+        webbrowser.open_new_tab('http://127.0.0.1:8090/_/')
 
 
 try:

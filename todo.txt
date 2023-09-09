@@ -1,0 +1,9 @@
+Example:
+
+By Friday (9/15/23){
+  Finish Implementation of BLS API{
+    Requires CORS permission,
+    Should be able to communicate and update with our backend (so make sure to use the ligma format) 
+    Etc...
+  }
+}

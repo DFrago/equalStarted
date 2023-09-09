@@ -1,3 +1,4 @@
+#Path for python interperter on my machine
 #!/usr/bin/env python3
 import os
 import sys
@@ -46,7 +47,7 @@ match arg:
 try:
     os.chdir('backend')
     if current_os=='posix':
-        os.system('./pocketbase serve &')
+        os.system('./pocketbase serve &') #The lil & is for persistence
     elif current_os=='nt':
         os.system('start pocketbase serve &')
     os.chdir(home)
@@ -54,5 +55,3 @@ try:
     os.system('npm run dev &')
 except Exception as e:
     print(e)
-
-    

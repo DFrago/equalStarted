@@ -25,7 +25,7 @@ Useful tips{
   git checkout branch [branch] (Changing branches)
 }
 
-I've written a small cross-platform script called qDraw ( as in quickDraw lmao). It's a small optional thing that you can use if you want to. Or not idc.
+I've written a small cross-platform script called qDraw ( as in quickDraw).
 This script will automatically launch the frontend and backend guis (as well as the required background process ).
 
 It can be passed command line arguments. 
@@ -43,4 +43,4 @@ Alternatively, you can just run the program with no paramters and allow the scri
 Example usage (open both frontend and backend){
   python qDraw.py  
 }
-I would recommend opening the whole equalStarted folder in vsCode, running the qDraw script in the integrated terminal, then opening whatever code you want to edit and do you thing.
+I would recommend opening the whole equalStarted folder in vsCode, running the qDraw script in the integrated terminal, then opening whatever code you want to edit.
